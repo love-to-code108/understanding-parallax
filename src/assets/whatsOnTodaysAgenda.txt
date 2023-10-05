@@ -1,0 +1,9 @@
+time right now is 6:45pm 
+time i will go to sleep is 2:00am
+
+therefore the time i have left is around 7hr and 15min approx
+
+[1] Grip on gsap
+[2] Convert the tecxaro repo from vite to next.js
+[3] make the parallx effect
+[4] 
