@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* pinned element contianer */
+#pinnedElementContainer{
+
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid black; */
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+/* random containers */
+.hello-world , .hello-world2{
+    height: 100vh;
+    width: 100%;
+
+    background-color: white;
+    background-color: greenyellow;
+
+}
+
+.hello-world2{
+    background-color: black;
+}
+
+.white-box , .orange-box {
+
+    width: 100%;
+    height: 100vh;
+}
+
+.white-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+}
+
+.white-text{
+
+    color: white;
+    font-size: 5rem;
+    z-index: +10;
+
+}
+
+.orange-box{
+
+    background-color: #FF3E1B;
+    position: absolute;
+    top: 0;
+    right: 100vw;
+}
