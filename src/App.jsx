@@ -21,7 +21,11 @@ function App() {
   // ALL THE ANIMATION RELATED STUFF WILL HAPPEN IN THIS FUNCTION
   function ParallaxAnimation() {
 
-    const t1 = gsap.timeline();
+
+    gsap.registerPlugin( ScrollTrigger);
+
+    
+   
 
 
     
@@ -33,40 +37,42 @@ function App() {
   return(
     <div>
 
-      <div className="hello-world">
+    
+    {/* FIRST IMAGE CONTAINING DIV */}
+      <div className="parallaxContainer Pcontainer1">
+        <div id="parallaxImage1" className="parallaxImage">
+          <h1 className=" text-8xl font-black">Image One</h1>   
+        </div>
       </div>
 
-      <div className="hello-world2">
-      </div>
 
-      
-      
-
-      {/* THE DIV DOING THE PINNING EFFECT AND THE ORANGE BACKGROUND COMING IN */}
-      <div id="pinnedElementContainer">
-
-          {/* div containing the writing and the white background */}
-          <div className="white-box">
-              <div className="white-text">
-                Hello world
-              </div>
-          </div>
-
-
-          {/* the div that will come in  */}
-          <div className="orange-box">
-
-          </div>
-
-
+    {/* SECOND IMAGE CONTAINING DIV */}
+    <div className="parallaxContainer Pcontainer2">
+        <div id="parallaxImage2" className="parallaxImage3">
+          <h1 className=" text-8xl font-black">Image Two</h1>   
+        </div>
       </div>
 
 
 
-      <div className="hello-world">
+    {/* THIRD IMAGE CONTAINING DIV */}
+    <div className="parallaxContainer">
+        <div id="parallaxImage3" className="parallaxImage3">
+          <h1 className=" text-8xl font-black">Image Three</h1>   
+        </div>
       </div>
 
-      {/*  */}
+
+
+    {/* FOURTH IMAGE CONTAINING DIV */}
+    <div className="parallaxContainer">
+        <div id="parallaxImage4" className="parallaxImage3">
+          <h1 className=" text-8xl font-black">Image Four</h1>   
+        </div>
+      </div>
+
+
+
 
 
 
